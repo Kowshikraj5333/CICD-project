@@ -2,18 +2,12 @@ import java.util.Scanner;
 
 class Hello {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        Scanner kowshik = new Scanner(System.in);
+        String name = sc.nextLine();
+        int score = sc.nextInt();
 
-        System.out.print("Enter your name: ");
-        String name = kowshik.nextLine();
-
-        System.out.print("Enter your score: ");
-        int score = kowshik.nextInt();
-
-        System.out.println("Name: " + name);
-        System.out.println("Score: " + score);
-
-        kowshik.close();
+        System.out.println(name);
+        System.out.println(score);
     }
 }
